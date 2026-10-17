@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>b sl oun xing 🫶🏻💞</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 25px;
+      box-shadow: 0 15px 35px rgba(255, 105, 180, 0.3);
+      max-width: 400px;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      color: #ff3b7b;
+      font-size: 28px;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    p.subtitle {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .hearts-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart-float {
+      position: absolute;
+      color: #ff4b82;
+      animation: float 5s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+      min-height: 60px;
+      position: relative;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-yes {
+      background-color: #ff3b7b;
+      color: white;
+    }
+
+    .btn-yes:hover {
+      transform: scale(1.1);
+      background-color: #e02868;
+    }
+
+    .btn-no {
+      background-color: #eee;
+      color: #555;
+      position: relative;
+    }
+
+    .secret-box {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #ffd1dc;
+      display: none;
+    }
+
+    .secret-box.active {
+      display: block;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .love-msg {
+      font-size: 18px;
+      color: #ff3b7b;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .love-details {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* ប្រអប់កាដូ YouTube Link */
+    .gift-box-link {
+      text-decoration: none;
+      display: block;
+    }
+
+    .gift-section {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 15px;
+      border: 1px solid #ffd1dc;
+      background: #fff0f5;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gift-section:hover {
+      transform: scale(1.02);
+    }
+
+    .gift-title {
+      font-size: 15px;
+      color: #ff3b7b;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .gift-icon {
+      font-size: 38px;
+      margin-bottom: 4px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <div class="card">
+    <h1>b sl oun xing 🫶🏻💞</h1>
+    <p class="subtitle">ស្រឡាញ់បងអត់bbe 🙈💖</p>
+
+    <div class="buttons">
+      <button class="btn btn-yes" onclick="showLove()">ស្រឡាញ់ខ្លាំង 💕</button>
+      <button class="btn btn-no" id="noBtn" onmouseover="moveNo()" onclick="moveNo()">អត់ទេ 😜</button>
+    </div>
+
+    <!-- ប្រអប់សារសម្ងាត់ -->
+    <div class="secret-box" id="secretBox">
+      <div class="love-msg">I LOVE YOU bbe 🫶 💗✨</div>
+      <p class="love-details">
+        អរគុណដែលអូនព្រមស្រឡាញ់បង លើកលែងឲ បងរហូតមកបងមិនហ៊ាន សន្យាថាមិនអាចធ្វើឲអូនខឹង ទេតែបងហ៊ានសន្យាថាបងស្រឡាញ់តែអូនម្នាក់ ប៉ុណ្ណោះ! 🌸
+      </p>
+    </div>
+
+    <!-- ប្រអប់កាដូ តភ្ជាប់ទៅ Link YouTube -->
+    <a href="https://youtu.be/e1aGsXCxIms?si=lbb1z3xZFyK4KQBv" target="_blank" class="gift-box-link">
+      <div class="gift-section">
+        <div class="gift-icon">🎁</div>
+        <div class="gift-title">នេះការដូbbe🙃</div>
+        <p class="love-details" style="color: #ff3b7b; font-size: 13px; font-weight: bold; margin-top: 4px;">
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart-float');
+      heart.innerHTML = '💖';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+      heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+      
+      document.getElementById('heartsBg').appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+    setInterval(createHeart, 300);
+
+    function moveNo() {
+      const btn = document.getElementById('noBtn');
+      const x = Math.random() * 150 - 75;
+      const y = Math.random() * 150 - 75;
+      btn.style.transform = `translate(${x}px, ${y}px)`;
+    }
+
+    function showLove() {
+      document.getElementById('secretBox').classList.add('active');
+    }
+  </script>
+</body>
+</html>
